@@ -11,16 +11,11 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    container: hseeberger/scala-sbt:17.0.2_1.6.2_3.1.1  # Образ с JDK 17 и SBT
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-
-      - name: Set up JDK
-        uses: actions/setup-java@v3
-        with:
-          java-version: '17'
-          distribution: 'temurin'
 
       - name: Cache SBT
         uses: actions/cache@v3
