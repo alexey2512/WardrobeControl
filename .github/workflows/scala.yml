@@ -11,7 +11,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    container: hseeberger/scala-sbt:17.0.2_1.6.2_3.1.1  # Образ с JDK 17 и SBT
+    container: hseeberger/scala-sbt:17.0.2_1.6.2_3.1.1
 
     steps:
       - name: Checkout repository
