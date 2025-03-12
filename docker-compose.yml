@@ -1,0 +1,16 @@
+services:
+  db:
+    image: postgres:latest
+    container_name: wardrobe_control_database_container
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: wardrobe_control_db
+    ports:
+      - "5444:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./src/main/resources/init.sql:/docker-entrypoint-initdb.d/init.sql
+
+volumes:
+  postgres_data: {}
