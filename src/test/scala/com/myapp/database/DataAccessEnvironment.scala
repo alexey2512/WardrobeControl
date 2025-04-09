@@ -11,10 +11,7 @@ class DataAccessEnvironment {
 
   def start(): Unit = container.make().start()
 
-  def finish(): Unit = {
-    container.stop()
-    container.close()
-  }
+  def finish(): Unit = container.stop()
 
   private def transactor: Resource[IO, HikariTransactor[IO]] =
     HikariTransactor.newHikariTransactor(
