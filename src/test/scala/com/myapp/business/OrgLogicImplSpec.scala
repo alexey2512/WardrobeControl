@@ -12,7 +12,7 @@ class OrgLogicImplSpec
     extends AsyncFlatSpec
     with Matchers
     with AsyncIOSpec
-    with InitBusinessOnMock {
+    with BusinessMockInit {
 
   val owner: OwnerToken    = genOwnToken("")
   var org: OrgInfoResponse = OrgInfoResponse(0, "test org", "*****", null)

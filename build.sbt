@@ -32,6 +32,7 @@ libraryDependencies ++=
     Pureconfig.libs ++
     Tofu.libs ++
     Slf4j.libs ++
+    TestContainers.libs ++
     Seq(
       logback_classic,
       postgres_driver,

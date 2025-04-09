@@ -15,7 +15,7 @@ class PersonLogicImplSpec
     with Matchers
     with AsyncIOSpec
     with BeforeAndAfterAll
-    with InitBusinessOnMock {
+    with BusinessMockInit {
 
   var org: OrgInfoResponse = OrgInfoResponse(0, "test org", "*****", null)
   var orgToken: OrgToken   = ""

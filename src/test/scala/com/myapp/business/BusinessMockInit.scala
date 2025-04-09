@@ -6,7 +6,7 @@ import com.myapp.database._
 import com.myapp.mock._
 import com.myapp.types.IdTypes._
 
-trait InitBusinessOnMock {
+trait BusinessMockInit {
 
   val tokens: Tokens[IO] = Tokens[IO]
 

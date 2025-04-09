@@ -74,4 +74,12 @@ object Dependencies {
     )
   }
 
+  object TestContainers {
+    val version: String = "1.20.6"
+    val libs: Seq[ModuleID] = Seq(
+      "org.testcontainers" % "testcontainers" % version,
+      "org.testcontainers" % "postgresql" % version
+    )
+  }
+
 }
