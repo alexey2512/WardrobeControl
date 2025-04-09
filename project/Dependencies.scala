@@ -2,7 +2,7 @@ import sbt.*
 
 object Dependencies {
 
-  val logback_classic = "ch.qos.logback" % "logback-classic" % "1.5.17"
+  val logback_classic = "ch.qos.logback" % "logback-classic" % "1.5.18"
   val postgres_driver = "org.postgresql" % "postgresql" % "42.7.5"
   val scalatest = "org.scalatest" %% "scalatest" % "3.2.19" % Test
   val blaze_server = "org.http4s" %% "http4s-blaze-server" % "0.23.17"
@@ -12,13 +12,13 @@ object Dependencies {
   object Cats {
     val libs: Seq[ModuleID] = Seq(
       "org.typelevel" %% "cats-core" % "2.13.0",
-      "org.typelevel" %% "cats-effect" % "3.5.7",
+      "org.typelevel" %% "cats-effect" % "3.6.1",
       "org.typelevel" %% "cats-effect-testing-scalatest" % "1.6.0" % Test
     )
   }
 
   object Circe {
-    val version: String = "0.14.10"
+    val version: String = "0.14.12"
     val libs: Seq[ModuleID] = Seq(
       "io.circe" %% "circe-core" % version,
       "io.circe" %% "circe-generic" % version,
@@ -27,7 +27,7 @@ object Dependencies {
   }
 
   object Tapir {
-    val version: String = "1.11.18"
+    val version: String = "1.11.23"
     val libs: Seq[ModuleID] = Seq(
       "com.softwaremill.sttp.tapir" %% "tapir-core" % version,
       "com.softwaremill.sttp.tapir" %% "tapir-http4s-server" % version,
@@ -57,7 +57,7 @@ object Dependencies {
   }
 
   object Tofu {
-    val version: String = "0.13.6"
+    val version: String = "0.13.7"
     val libs: Seq[ModuleID] = Seq(
       "tf.tofu" %% "tofu-kernel" % version,
       "tf.tofu" %% "tofu-core-ce3" % version,

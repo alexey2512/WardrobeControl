@@ -72,7 +72,4 @@
 тесты, что требуют развертывания контейнера помечены ```@DoNotDiscover``` и 
 находятся в пакете [database](src/test/scala/com/myapp/database). Вы можете 
 запустить их по отдельности или выполнить их всех запустив файл 
-[DaoImplSpec](src/test/scala/com/myapp/database/DaoImplSpec.scala). 
-
-P.S. При запуске DAO-тестов не гарантируется, что база данных останется 
-в том же состоянии, что было до запуска, даже при успешном прохождении.
+[DaoImplSpec](src/test/scala/com/myapp/database/DaoImplSpec.scala).
